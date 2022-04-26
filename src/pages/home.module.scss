@@ -1,1 +1,45 @@
-// TODO
+.posts {
+  padding: 2rem 0;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 3rem;
+    }
+
+    &:hover strong {
+      color: var(--highlight);
+      transition: all ease 0.3s;
+    }
+
+    strong {
+      font-size: 1.5rem;
+      color: var(--heading);
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    & > div {
+      display: flex;
+      gap: 2.5rem;
+    }
+  }
+}
+
+.buttonPosts {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--highlight);
+  background: transparent;
+  border: none;
+  margin-top: 2rem;
+
+  transition: filter ease 0.3s;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}

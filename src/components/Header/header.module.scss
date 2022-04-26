@@ -1,1 +1,18 @@
-// TODO
+.header {
+  padding: 2rem 0;
+  background-color: var(--background);
+
+  a {
+    img {
+      width: 170px;
+
+      @media (min-width: 425px) {
+        width: 200px;
+      }
+
+      @media (min-width: 768px) {
+        width: 230px;
+      }
+    }
+  }
+}
